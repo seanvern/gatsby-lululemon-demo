@@ -1,9 +1,8 @@
 import React from 'react';
+import { Link } from 'gatsby'
 
-export default () => {
-  return (
-    <>
-      <h1>Hello Lululemon!</h1>
-    </>
-  );
-};
+export default () =>
+  <>
+    <h1>Hello lululemons!</h1>
+    <Link to="/about">Learn More About Me!</Link>
+  </>;
