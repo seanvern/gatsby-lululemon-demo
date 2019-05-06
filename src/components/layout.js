@@ -1,8 +1,13 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
-import Header from './header';
+import Helmet from 'react-helmet';
+import Header from './header'
+import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const Layout = ({ children }) => {
+
+  const { title, description } = useSiteMetadata();
+
   return (
     <>
       <Global
@@ -22,10 +27,10 @@ const Layout = ({ children }) => {
             Roboto, 'Helvetica Neue', Arial, sans-serif;
           font-size: 18px;
           line-height: 1.4;
-        }
-        // remove margin for the main div that Gatsby mounts into
-        > div {
-          margin-top: 0;
+          /* remove margin for the main div that Gatsby mounts into */
+          > div {
+            margin-top: 0;
+          }
         }
         h1, 
         h2,
@@ -47,7 +52,12 @@ const Layout = ({ children }) => {
         }
       `}
       />
-      <Header />
+      <Helmet>
+        <html lang="en "></html>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
+      <Header></Header>
       <main
         css={css`
           margin: 2rem auto 4rem;

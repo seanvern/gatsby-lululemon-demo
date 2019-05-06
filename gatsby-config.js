@@ -1,0 +1,10 @@
+module.exports = {
+  siteMetadata: {
+    title: 'lululemon Blog Site',
+    description: 'A site I built with Jason on FE Masters'
+  },
+  plugins: [
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-react-helmet'
+  ]
+}
