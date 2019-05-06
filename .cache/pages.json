@@ -18,5 +18,15 @@
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---templates-post-js",
+        "jsonName": "first-post-253",
+        "path": "/first-post"
+    },
+    {
+        "componentChunkName": "component---templates-post-js",
+        "jsonName": "hello-world-209",
+        "path": "/hello-world"
     }
 ]
